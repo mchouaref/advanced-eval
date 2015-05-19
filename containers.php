@@ -45,11 +45,13 @@ $container = array(
 );
 
 
-function Pourcentage($Poid_reel, $Poid_max) {
-	return $Poid_reel * 100 / $Poid_max; 
+function Pourcentage($Poid_Reel, $Poid_Max) {
+$pourcent = $Poid_Reel * 100 / $Poid_Max;
+$pourcent = ceil($pourcent);
+return $pourcent;
 }
-
 ?>
+
 
 <h1>Mohamed Chouaref</h1>
 <table>
